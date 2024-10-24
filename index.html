@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VECTINOX | Digital Design Agency</title>
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="bg-white">
+  <!-- Navbar Start -->
+  <nav id="navbar" class=" p-6 bg-cyan-950 sticky top-0 z-50 shadow-md">
+
+  
+    <!-- Logo -->
+    <div class="flex justify-around items-center">
+    <a href="#" class="items-center gap-2 flex">
+      <img src="images/icon.png" alt="Logo Not Found"
+        class="object-cover max-w-10 max-h-10 bg-gradient-to-t from-cyan-800 to-cyan-500 p-2 rounded-lg shadow-xl" />
+      <span class="font-bold text-3xl text-white tracking-wide">VECTINOX</span>
+    </a>
+
+    <!-- Nav Menu Links -->
+    <div class="nav-menu">
+      <div class="links text-white hidden font-medium text-lg gap-8 md:flex items-center">
+        <a href="#" class="hover:border-b-2 border-cyan-500">Home</a>
+        <a href="#about" class="hover:border-b-2 border-cyan-500">About</a>
+        <a href="#services" class="hover:border-b-2 border-cyan-500">Service</a>
+        <a href="#portfolio" class="hover:border-b-2 border-cyan-500">Portfolio</a>
+        <a href="#reviews" class="hover:border-b-2 border-cyan-500">Reviews</a>
+        <a href="#faqs" class="hover:border-b-2 border-cyan-500">FAQs</a>
+        <a href="#contact" class="hover:border-b-2 border-cyan-500">Contact</a>
+      </div>
+    </div>
+
+    <!-- menu icon for mobile devices -->
+    <button onclick="handleMenu()" class="p-2 md:hidden">
+      <i class="fa-solid fa-bars text-white"></i>
+    </button>
+
+    <!-- NavBar for Mobile Devices -->
+    <div id="nav-dailoge" class="fixed z-10 md:hidden inset-0 p-6 bg-cyan-950 hidden">
+      <div class="flex justify-around">
+        <!-- Logo -->
+        <a href="#" class="items-center gap-2 flex">
+          <img src="images/icon.png" alt="Logo Not Found"
+            class="object-cover max-w-10 max-h-10 bg-gradient-to-t from-cyan-600 to-cyan-400 p-2 rounded-lg shadow-xl" />
+          <span class="font-bold text-3xl text-white tracking-wide">VECTINOX</span>
+        </a>
+
+        <!-- menu icon -->
+        <button onclick="handleMenu()" class="p-2 md:hidden">
+          <i class="fa-solid fa-xmark text-gray-700 bg-gray-200 p-2 rounded-md"></i>
+        </button>
+      </div>
+      <!-- Links for mobile nav -->
+      <div class="mt-4 bg-cyan-800 text-white border-3 rounded-md p-2 text">
+        <a href="#" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">Home</a>
+        <a href="#about" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">About</a>
+        <a href="#services" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">Service</a>
+        <a href="#portfolio" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">Portfolio</a>
+        <a href="#reviews" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">Reviews</a>
+        <a href="#faqs" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">FAQs</a>
+        <a href="#contact" class="m-3 p-3 font-medium hover:bg-cyan-600 block rounded-lg">Contact</a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative p-4 bg-gradient-to-l to-cyan-950 from-cyan-700 text-white">
+    <div class="container mx-auto px-2 lg:px-12 py-20 flex flex-col lg:flex-row items-center justify-around gap-10">
+
+      <!-- Hero Text Section -->
+      <div class="lg:w-1/2" data-aos="fade-down-right">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-2">
+          Designs That Elevate
+        </h1>
+        <span class="text-cyan-400 text-4xl lg:text-6xl font-bold">Your Presence</span>
+        <p class="text-xl mb-8 mt-8 leading-relaxed">
+          At VECTINOX, we turn your ideas into striking visuals. From polished resumes to dynamic social media designs,
+          we help you create a memorable online presence that truly reflects your brand.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#services" class="bg-white text-cyan-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100">
+            Explore Services
+          </a>
+          <a href="#contact"
+            class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-cyan-700">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Image Section -->
+      <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-end" data-aos="fade-down-left">
+        <img src="images/heroo.jpg" alt="Digital Design Image" width="550" class="rounded-3xl h-auto object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="relative p-4 bg-white">
+    <div class="container mx-auto px-2 lg:px-12 py-20 flex flex-col lg:flex-row items-center justify-around gap-10">
+
+      <!-- About Image Section -->
+      <div class="mt-10 lg:mt-0 lg:w-1/2 flex justify-start" data-aos="fade-right">
+        <img src="images/about.jpg" alt="Digital Design Image" width="550" class="rounded-3xl h-auto object-contain" />
+      </div>
+
+      <!-- About Text Section -->
+      <div class="lg:w-1/2" data-aos="fade-left">
+        <h1 class="text-4xl lg:text-6xl font-bold mb-2">
+          About
+        </h1>
+        <span class="text-cyan-600 text-4xl lg:text-6xl font-bold">VECTINOX</span>
+        <p class="text-xl mb-8 mt-8 leading-relaxed">
+          We specialize in bringing your ideas to life through creative and professional designs. Whether you're looking
+          for eye-catching resumes, compelling cover letters, or striking social media graphics, we've got you covered.
+          Our services include resume design, resume writing, flyers, menus, business cards, and more. Let us help you
+          make a lasting impression with polished and customized designs that speak directly to your audience. Partner
+          with us to elevate your brand and stand out in the digital world.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#portfolio" class="bg-cyan-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-cyan-800">
+            Explore Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Features Section with Hover Effects -->
+<section class="bg-gradient-to-r to-cyan-950 from-cyan-700 py-8 p-4" id="services">
+  <div class="container mx-auto text-center px-4">
+    <h2 class="text-4xl font-bold text-white mb-4">Our Design Services</h2>
+    <p class="text-white mb-8">We offer a variety of creative design services to help your brand stand out.</p>
+    <div class="flex flex-wrap -mx-4">
+      <!-- Feature 1: Flyer Design -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-down-right">
+        <div class="bg-white p-8 shadow-md rounded-md transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="bg-cyan-100 rounded-full p-4 mb-4 inline-block">
+            <i class="fas fa-file-alt text-4xl text-cyan-700"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Flyer Design</h3>
+          <p class="text-gray-600">We create eye-catching flyers that captivate your audience and deliver your message effectively.</p>
+        </div>
+      </div>
+      <!-- Feature 2: Brochure Design -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-down">
+        <div class="bg-white p-8 shadow-md rounded-md transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="bg-cyan-100 rounded-full p-4 mb-4 inline-block">
+            <i class="fas fa-book-open text-4xl text-cyan-700"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Brochure Design</h3>
+          <p class="text-gray-600">We design professional brochures that showcase your products or services with style and clarity.</p>
+        </div>
+      </div>
+      <!-- Feature 3: Business Cards -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-down-left">
+        <div class="bg-white p-8 shadow-md rounded-md transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="bg-cyan-100 rounded-full p-4 mb-4 inline-block">
+            <i class="fas fa-id-card text-4xl text-cyan-700"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Business Cards</h3>
+          <p class="text-gray-600">Make a lasting first impression with custom-designed business cards tailored to your brand.</p>
+        </div>
+      </div>
+      <!-- Feature 4: Brand Kit -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-up-right">
+        <div class="bg-white p-8 shadow-md rounded-md transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="bg-cyan-100 rounded-full p-4 mb-4 inline-block">
+            <i class="fas fa-palette text-4xl text-cyan-700"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Brand Kit</h3>
+          <p class="text-gray-600">We develop a comprehensive brand kit (logos, typography, and color palettes) for a cohesive brand identity.</p>
+        </div>
+      </div>
+      <!-- Feature 5: Resume Design -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-up">
+        <div class="bg-white p-8 shadow-md rounded-md transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="bg-cyan-100 rounded-full p-4 mb-4 inline-block">
+            <i class="fas fa-file-signature text-4xl text-cyan-700"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Resume Design</h3>
+          <p class="text-gray-600">We craft modern and professional resumes that help you make a strong first impression in the job market.</p>
+        </div>
+      </div>
+      <!-- Feature 6: Poster Design -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-up-left">
+        <div class="bg-white p-8 shadow-md rounded-md transition-transform transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="bg-cyan-100 rounded-full p-4 mb-4 inline-block">
+            <i class="fas fa-paint-brush text-4xl text-cyan-700"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Poster Design</h3>
+          <p class="text-gray-600">Bold and creative poster designs to promote your events and campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section class="bg-gray-100 py-8 p-4" id="portfolio">
+  <div class="container mx-auto text-center px-4">
+    <h2 class="text-4xl font-bold text-cyan-700 mb-4">Our Portfolio</h2>
+    <p class="text-gray-600 mb-8">Check out some of our creative work that showcases our design expertise.</p>
+    
+    <div class="flex flex-wrap -mx-4">
+      <!-- Portfolio Item 1 -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-right">
+        <a href="showcase/flyer.html">
+        <div class="group relative bg-white shadow-md rounded-md overflow-hidden transition-transform transform hover:shadow-lg hover:-translate-y-2">
+          <img src="images/flyer/flyer_1.jpg" alt="Portfolio Image 1" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-cyan-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <h3 class="text-white text-xl font-bold">Flyer Design</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Portfolio Item 2 -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-right">
+        <a href="showcase/brochure.html">
+        <div class="group relative bg-white shadow-md rounded-md overflow-hidden transition-transform transform hover:shadow-lg hover:-translate-y-2">
+          <img src="images/brochuer/brochuer_1.jpg" alt="Portfolio Image 2" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-cyan-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <h3 class="text-white text-xl font-bold">Brochure Design</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-right">
+        <a href="showcase/business_card.html">
+        <div class="group relative bg-white shadow-md rounded-md overflow-hidden transition-transform transform hover:shadow-lg hover:-translate-y-2">
+          <img src="images/business_card/business_card_1.jpg" alt="Portfolio Image 3" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-cyan-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <h3 class="text-white text-xl font-bold">Business Card Design</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Portfolio Item 4 -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-left">
+        <a href="showcase/banner.html">
+        <div class="group relative bg-white shadow-md rounded-md overflow-hidden transition-transform transform hover:shadow-lg hover:-translate-y-2">
+          <img src="images/banner/banner_1.jpg" alt="Portfolio Image 4" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-cyan-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <h3 class="text-white text-xl font-bold">Poster Design</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Portfolio Item 5 -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-left">
+        <a href="showcase/resume.html">
+        <div class="group relative bg-white shadow-md rounded-md overflow-hidden transition-transform transform hover:shadow-lg hover:-translate-y-2">
+          <img src="images/resume/resume.jpg" alt="Portfolio Image 5" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-cyan-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <h3 class="text-white text-xl font-bold">Resume Design</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <!-- Portfolio Item 6 -->
+      <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-left">
+        <a href="showcase/brand_kit.html">
+        <div class="group relative bg-white shadow-md rounded-md overflow-hidden transition-transform transform hover:shadow-lg hover:-translate-y-2">
+          <img src="images/brand_kit/brand_kit_1.jpg" alt="Portfolio Image 6" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-cyan-700 bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <h3 class="text-white text-xl font-bold">Brand Kit Design</h3>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Reviews Slider Section -->
+<section id="reviews" class="bg-white py-20 ">
+  <div class="container mx-auto px-4 lg:px-12 text-center">
+    <h2 class="text-4xl font-bold text-cyan-700 mb-8">What Our Clients Say</h2>
+    <div class="relative overflow-hidden">
+      <div class="flex animate-slide testimonial-slider" id="testimonial-container">
+        <!-- Review 1 -->
+        <div class="testimonial w-full md:w-1/3 px-4">
+          <div class="bg-gradient-to-t to-cyan-950 from-cyan-700 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <p class="text-white italic text-lg">"VECTINOX transformed my resume into a work of art! I received multiple interview calls after using their services."</p>
+            <h3 class="font-bold text-white mt-4">Aisha Khan</h3>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="w-full md:w-1/3 px-4">
+          <div class="bg-gradient-to-t to-cyan-950 from-cyan-700 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <p class="text-white italic text-lg">"The branding kit VECTINOX created for my business was exactly what I needed. Their attention to detail is commendable!"</p>
+            <h3 class="font-bold text-white mt-4">Ali Raza</h3>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="w-full md:w-1/3 px-4">
+          <div class="bg-gradient-to-t to-cyan-950 from-cyan-700 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <p class="text-white italic text-lg">"I loved the flyer design! It perfectly captured the essence of my event. Highly recommend VECTINOX!"</p>
+            <h3 class="font-bold text-white mt-4">Sara Ahmed</h3>
+          </div>
+        </div>
+        <!-- Duplicating Reviews for Continuous Effect -->
+        <!-- Review 1 Duplicate -->
+        <div class="w-full md:w-1/3 px-4">
+          <div class="bg-gradient-to-t to-cyan-950 from-cyan-700 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <p class="text-white italic text-lg">"VECTINOX transformed my resume into a work of art! I received multiple interview calls after using their services."</p>
+            <h3 class="font-bold text-white mt-4">Aisha Khan</h3>
+          </div>
+        </div>
+        <!-- Review 2 Duplicate -->
+        <div class="w-full md:w-1/3 px-4">
+          <div class="bg-gradient-to-t to-cyan-950 from-cyan-700 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <p class="text-white italic text-lg">"The branding kit VECTINOX created for my business was exactly what I needed. Their attention to detail is commendable!"</p>
+            <h3 class="font-bold text-white mt-4">Ali Raza</h3>
+          </div>
+        </div>
+        <!-- Review 3 Duplicate -->
+        <div class="w-full md:w-1/3 px-4">
+          <div class="bg-gradient-to-t to-cyan-950 from-cyan-700 p-6 rounded-lg shadow-md max-w-md mx-auto">
+            <p class="text-white italic text-lg">"I loved the flyer design! It perfectly captured the essence of my event. Highly recommend VECTINOX!"</p>
+            <h3 class="font-bold text-white mt-4">Sara Ahmed</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQs Section -->
+<section id="faqs" class="bg-gradient-to-l to-cyan-950 from-cyan-700 px-4 py-12">
+  <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-white mb-6">Frequently Asked Questions</h2>
+      <p class="text-center text-white mb-8">Find answers to the most common questions about our services.</p>
+      
+      <div class="space-y-4">
+          <!-- FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(1)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-1"></i>
+                  What design services do you offer?
+              </h3>
+              <p id="answer-1" class="text-gray-600 mt-2 hidden">We offer a variety of creative design services, including Flyer Design, Brochure Design, Business Cards, Brand Kits, Resume Design, and Poster Design.</p>
+          </div>
+
+          <!-- FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(2)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-2"></i>
+                  How long does a project typically take?
+              </h3>
+              <p id="answer-2" class="text-gray-600 mt-2 hidden">The timeline for each project depends on its scope. Generally, smaller projects like business cards may take 1 day, while larger projects like brand kits may take several days.</p>
+          </div>
+
+          <!-- FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(3)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-3"></i>
+                  Do you provide ongoing support for design projects?
+              </h3>
+              <p id="answer-3" class="text-gray-600 mt-2 hidden">Yes, we offer ongoing support and revisions for our design projects to ensure you are satisfied with the final product.</p>
+          </div>
+
+          <!-- FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(4)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-4"></i>
+                  What is your pricing model for design services?
+              </h3>
+              <p id="answer-4" class="text-gray-600 mt-2 hidden">Our pricing varies based on the project scope and requirements. We provide detailed quotes after discussing your needs for services like flyer or poster design.</p>
+          </div>
+
+          <!-- New FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(5)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-5"></i>
+                  Can I request custom designs?
+              </h3>
+              <p id="answer-5" class="text-gray-600 mt-2 hidden">Absolutely! We specialize in custom designs tailored to your specific needs. Just let us know your ideas, and we’ll bring them to life.</p>
+          </div>
+
+          <!-- New FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(6)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-6"></i>
+                  What files will I receive upon project completion?
+              </h3>
+              <p id="answer-6" class="text-gray-600 mt-2 hidden">You will receive all final design files in various formats (PDF, PNG, JPG, etc.) suitable for both print and digital use, depending on the service.</p>
+          </div>
+
+          <!-- New FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(7)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-7"></i>
+                  How do you handle revisions?
+              </h3>
+              <p id="answer-7" class="text-gray-600 mt-2 hidden">We typically include a set number of revisions in our projects. After that, additional revisions may incur a fee, but we aim to get it right within the initial rounds.</p>
+          </div>
+
+          <!-- New FAQ Item -->
+          <div class="bg-white shadow-md rounded-lg p-4" data-aos="fade-down">
+              <h3 class="font-semibold text-gray-800 cursor-pointer flex items-center" onclick="toggleAnswer(8)">
+                  <i class="fas fa-chevron-right mr-2 transition-transform duration-300" id="icon-8"></i>
+                  Do you offer branding services?
+              </h3>
+              <p id="answer-8" class="text-gray-600 mt-2 hidden">Yes, we provide comprehensive branding services, including logo design, brand strategy, and brand kits to help establish a cohesive brand identity.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="bg-white py-20 px-4">
+  <h2 class="text-4xl font-bold text-cyan-700 mb-8 text-center">Contact Us</h2>
+  <div class="container mx-auto px-4 lg:px-12 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0" data-aos="fade-up-right">
+      <p class="text-gray-700 text-center mb-12 text-2xl font-bold">Our team is always here to assist you with any questions or concerns you may have. Your satisfaction is our priority!</p>
+      <div class="mb-4 flex items-center">
+        <i class="fas fa-envelope text-cyan-600 mr-2"></i>
+        <p class="text-gray-700">vectinox.agency@gmail.com</p>
+      </div>
+      <!-- Whatsapp Number for later -->
+      <!-- <div class="mb-4 flex items-center">
+        <i class="fas fa-phone text-cyan-600 mr-2"></i>
+        <p class="text-gray-700">+92 300 1234567</p>
+      </div> -->
+      
+      <form id="contact-form" method="POST" class="space-y-4">
+        <div>
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" name="name" required class="mt-1 p-2 border border-gray-300 rounded w-full" placeholder="Your Name">
+        </div>
+        <div>
+          <label for="mobile" class="block text-gray-700">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" required class="mt-1 p-2 border border-gray-300 rounded w-full" placeholder="Your Mobile Number">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700">Message</label>
+          <textarea id="message" name="message" required class="mt-1 p-2 border border-gray-300 rounded w-full h-32" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-cyan-600 text-white py-2 rounded hover:bg-cyan-500 transition">Send Message</button>
+      </form>
+      <p class="mt-4 text-gray-600 text-sm">We will get back to you as soon as possible.</p> <!-- Note added here -->
+    </div>
+
+    <div class="lg:w-1/2" data-aos="fade-down">
+      <img src="images/contact.jpg" alt="Contact Us" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- Simple Footer Section -->
+<footer class="bg-cyan-950 text-white pt-4">
+  <div class="container mx-auto text-center mb-4">
+      <!-- Company Info -->
+      <p class="text-3xl font-extrabold tracking-wider mb-4">VECTINOX</p>
+
+<!-- Email and WhatsApp in One Line (Responsive) -->
+<div class="mt-1 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+  <!-- Email Link -->
+  <a href="mailto:info@help24.com" class="flex items-center space-x-2">
+    <i class="fas fa-envelope text-red-500 text-xl"></i>
+    <span>Email:</span><span class="hover:underline font-bold"> vectinox.agency@gmail.com</span>
+  </a>
+
+  <!-- WhatsApp Link
+  <a href="https://wa.me/923001234567" target="_blank" class="flex items-center space-x-1">
+    <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+    <span>WhatsApp:</span><span class="hover:underline font-bold">+92 300 1234567</span>
+  </a> -->
+</div>
+      
+      <!-- Copyright Info -->
+      <div class="mt-4">
+          <p>&copy; 2024 VECTINOX. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="text-md text-cyan-950 text-center py-2 font-bold bg-white min-w-full">
+      <div id="clock" class="font-mono text-cyan-700"></div>
+      <p class="">Office Timing : Monday to Saturday | 9 AM to 8 PM</p>
+      </div>
+</footer>
+
+
+
+  <script>
+            function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            const clock = document.getElementById('clock');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+        window.onload = updateClock; // Initial call to display clock immediately
+  </script>
+  <script src="script.js"></script>
+  <!-- AOS Function -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      // AOS Animation
+      AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false,
+    });
+  </script>
+
+<!-- Include EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  // Initialize EmailJS with Public Key
+  emailjs.init('iVYMw9w-TCQn1bnZd');
+
+  // Add event listener to the form submission
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    
+    // Send the form data using EmailJS
+    emailjs.sendForm('service_vectinox', 'template_qvni0l9', this)
+      .then(function() {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send message. Error: ' + JSON.stringify(error));
+      });
+  });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+        /* Optional: To improve transition effect */
+        .testimonial-slider {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        .testimonial {
+            min-width: 300px; /* Adjust based on your desired width */
+            padding: 1rem;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); } /* Scroll to half the total width */
+        }
+
+        /* Container to create a seamless loop */
+        #testimonial-container {
+            display: flex;
+            width: 200%; /* Double the width to fit clones */
+        }

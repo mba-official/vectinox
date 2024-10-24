@@ -1,0 +1,20 @@
+{
+  "name": "al-noor-computer",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "mba": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1"
+  }
+}
